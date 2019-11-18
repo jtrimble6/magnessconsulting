@@ -11,7 +11,10 @@ class App extends Component {
         // Call our fetch function below once the component mounts
       this.callBackendAPI()
         .then(res => this.setState({ data: res.express }))
-        .catch(err => console.log(err));
+        .catch(err => {
+          console.log(err)
+          this.setState({ data: 'You are NOT connected to the server' })
+        });
     }
       // Fetches our GET route from the Express server. (Note the route we are fetching matches the GET route from server.js
     callBackendAPI = async () => {
