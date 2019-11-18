@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/magnessconsulting/precache-manifest.d08852b8c9fbed85ad8c13e899d4df11.js"
+  "/magnessconsulting/precache-manifest.8e8bc1818d59f2cf3a5faf4627140a59.js"
 );
 
 self.addEventListener('message', (event) => {
