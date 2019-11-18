@@ -15,7 +15,7 @@ class App extends Component {
         .then(res => this.setState({ data: res.express }))
         .catch(err => {
           console.log(err)
-          this.setState({ data: 'You are NOT connected to the server' })
+          // this.setState({ data: 'You are NOT connected to the server' })
         });
     }
       // Fetches our GET route from the Express server. (Note the route we are fetching matches the GET route from server.js
@@ -24,6 +24,7 @@ class App extends Component {
       const body = await response.json();
   
       if (response.status !== 200) {
+        this.setState({ data: 'You are NOT connected to the server' })
         throw Error(body.message) 
       }
       return body;
