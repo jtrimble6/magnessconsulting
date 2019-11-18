@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/magnessconsulting/static/css/main.b100e6da.chunk.css",
-    "main.js": "/magnessconsulting/static/js/main.eec3ad0c.chunk.js",
-    "main.js.map": "/magnessconsulting/static/js/main.eec3ad0c.chunk.js.map",
-    "runtime-main.js": "/magnessconsulting/static/js/runtime-main.9e710824.js",
-    "runtime-main.js.map": "/magnessconsulting/static/js/runtime-main.9e710824.js.map",
-    "static/js/2.0f5ef82e.chunk.js": "/magnessconsulting/static/js/2.0f5ef82e.chunk.js",
-    "static/js/2.0f5ef82e.chunk.js.map": "/magnessconsulting/static/js/2.0f5ef82e.chunk.js.map",
+    "main.js": "/magnessconsulting/static/js/main.b460dd3b.chunk.js",
+    "main.js.map": "/magnessconsulting/static/js/main.b460dd3b.chunk.js.map",
+    "runtime-main.js": "/magnessconsulting/static/js/runtime-main.5b5f3b09.js",
+    "runtime-main.js.map": "/magnessconsulting/static/js/runtime-main.5b5f3b09.js.map",
+    "static/js/2.892385ae.chunk.js": "/magnessconsulting/static/js/2.892385ae.chunk.js",
+    "static/js/2.892385ae.chunk.js.map": "/magnessconsulting/static/js/2.892385ae.chunk.js.map",
     "index.html": "/magnessconsulting/index.html",
-    "precache-manifest.8e8bc1818d59f2cf3a5faf4627140a59.js": "/magnessconsulting/precache-manifest.8e8bc1818d59f2cf3a5faf4627140a59.js",
+    "precache-manifest.46a9d31794a7dd8c477eeb4b4b5b40e9.js": "/magnessconsulting/precache-manifest.46a9d31794a7dd8c477eeb4b4b5b40e9.js",
     "service-worker.js": "/magnessconsulting/service-worker.js",
     "static/css/main.b100e6da.chunk.css.map": "/magnessconsulting/static/css/main.b100e6da.chunk.css.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.9e710824.js",
-    "static/js/2.0f5ef82e.chunk.js",
+    "static/js/runtime-main.5b5f3b09.js",
+    "static/js/2.892385ae.chunk.js",
     "static/css/main.b100e6da.chunk.css",
-    "static/js/main.eec3ad0c.chunk.js"
+    "static/js/main.b460dd3b.chunk.js"
   ]
 }
