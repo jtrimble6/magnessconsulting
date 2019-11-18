@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/magnessconsulting/static/css/main.b100e6da.chunk.css",
+    "main.js": "/magnessconsulting/static/js/main.8416c642.chunk.js",
+    "main.js.map": "/magnessconsulting/static/js/main.8416c642.chunk.js.map",
+    "runtime-main.js": "/magnessconsulting/static/js/runtime-main.9e710824.js",
+    "runtime-main.js.map": "/magnessconsulting/static/js/runtime-main.9e710824.js.map",
+    "static/js/2.96e02ede.chunk.js": "/magnessconsulting/static/js/2.96e02ede.chunk.js",
+    "static/js/2.96e02ede.chunk.js.map": "/magnessconsulting/static/js/2.96e02ede.chunk.js.map",
+    "index.html": "/magnessconsulting/index.html",
+    "precache-manifest.73cb5ef17763ec6e1ac9b260ca713ff4.js": "/magnessconsulting/precache-manifest.73cb5ef17763ec6e1ac9b260ca713ff4.js",
+    "service-worker.js": "/magnessconsulting/service-worker.js",
+    "static/css/main.b100e6da.chunk.css.map": "/magnessconsulting/static/css/main.b100e6da.chunk.css.map",
+    "static/media/logo.svg": "/magnessconsulting/static/media/logo.25bf045c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9e710824.js",
+    "static/js/2.96e02ede.chunk.js",
+    "static/css/main.b100e6da.chunk.css",
+    "static/js/main.8416c642.chunk.js"
+  ]
+}
