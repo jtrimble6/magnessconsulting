@@ -32,7 +32,7 @@ class App extends Component {
         <div className="App">
           <header className="App-header">
             {/* <img src={logo} className="App-logo" alt="logo" /> */}
-            <h1 className="App-title">Lets Kick Ass, Amirah!!</h1>
+            <h1 className="App-title">Lets Kick Some Ass, Amirah!!</h1>
           </header>
           
           <p className="App-intro">{this.state.data}</p>
