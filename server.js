@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const morgan = require('morgan')
 const session = require('express-session');
+const contactRoutes = require('./routes/API/contactAPI')
 // const passport = require('./server/passport');
 const app = express();
 const path = require("path");
@@ -26,7 +27,7 @@ app.use('/magnessconsulting/', express.static(path.join(__dirname, "client/build
 // app.use(passport.session());
 
 // Add routes, both API and view
-// app.use();
+app.use(contactRoutes);
 
 app.use(
   session({
