@@ -29,7 +29,6 @@ class App extends Component {
       const body = await response.json();
   
       if (response.status !== 200) {
-        this.setState({ data: 'You are NOT connected to the server' })
         throw Error(body.message) 
       }
       return body;
