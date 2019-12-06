@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import NavBar from './components/navbar'
-import Footer from './components/footer'
-// import logo from './logo.svg';
+import Navbar from './components/Navbar'
+import Contact from './components/Contact'
 import './Reset.css';
 import './App.css';
+import './assets/css/style.css'
+import './assets/css/stylecustom.css'
 
 import Home from './pages/home'
 
@@ -37,29 +38,16 @@ class App extends Component {
     render() {
       return (
         <div className='wrapper'>
-          <NavBar 
-            className='navbar'
-          />
-            <div className='content'>
-              <BrowserRouter>
-                <Switch>
-                  <Route path='/' component={Home} exact/>
-                </Switch>
-              </BrowserRouter>
-            </div>
-          <Footer 
-            className='footer'
-          />
+          <Navbar />
+          <BrowserRouter>
+            <Switch>
+              <Route path='/' component={Home} exact/>
+            </Switch>
+          </BrowserRouter>
+          <Contact />
         </div>
 
-        // <div className="App">
-        //   <header className="App-header">
-        //     {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        //     <h1 className="App-title">Lets Kick Some Ass, Amirah!!</h1>
-        //   </header>
-          
-        //   <p className="App-intro">{this.state.data}</p>
-        // </div>
+       
       );
     }
   }

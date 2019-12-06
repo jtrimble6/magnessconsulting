@@ -1,35 +1,57 @@
-import React from 'react'
-import {Navbar, Nav, NavDropdown} from 'react-bootstrap'
+import React, { Component } from 'react';
 
-const NavBar = () => {
-    return (
-        <div>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-              <Navbar.Brand href="#home">Magness Consulting LLC</Navbar.Brand>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav className="mr-auto">
-                    <Nav.Link href="#about">About Dr. Magness</Nav.Link>
-                    <Nav.Link href="#mission">Our Mission</Nav.Link>
-                    <NavDropdown title="Services" id="collasible-nav-dropdown">
-                    <NavDropdown.Item href="#leadershipcoaching">Leadership Coaching</NavDropdown.Item>
-                    <NavDropdown.Item href="#teamdev">Team Development</NavDropdown.Item>
-                    <NavDropdown.Item href="#processimp">Process Improvement/Problem Solving</NavDropdown.Item>
-                    <NavDropdown.Item href="#orgdev">Organizational Development</NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                    </NavDropdown>
-                </Nav>
-                <Nav>
-                    <Nav.Link href="#contact">Contact Us</Nav.Link>
-                    {/* <Nav.Link eventKey={2} href="#memes">
-                    Dank memes
-                    </Nav.Link> */}
-                </Nav>
-                </Navbar.Collapse>
-            </Navbar>
-        </div>
+class Navbar extends Component {
+    constructor(props) {
+        super(props);
+
+        this.toggleNavbar = this.toggleNavbar.bind(this);
+
+        this.state = {
+          collapsed: true
+        }
+    }
+
+    toggleNavbar() {
+        this.setState({
+            collapsed: !this.state.collapsed
+        })
+      }
+
+    render() {
+      return (
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a className="navbar-brand" href="/">M</a>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul className="navbar-nav">
+                <li className="nav-item active">
+                    <a className="nav-link" href="/">
+                      MEET MAGNESS 
+                      <span className="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li className="nav-item active dropdown">
+                    <a className="nav-link dropdown-toggle" href="/" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      SERVICES
+                    </a>
+                    <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a className="dropdown-item" href="/">LEADERSHIP COACHING</a>
+                      <a className="dropdown-item" href="/">TEAM DEVELOPMENT</a>
+                      <a className="dropdown-item" href="/">PROCESS IMPROVEMENT/PROBLEM SOLVING</a>
+                      <a className="dropdown-item" href="/">ORGANIZATIONAL DEVELOPMENT</a>
+                    </div>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link active" href="/">MISSON</a>
+                </li>
+                <button type="button" className="btn btn-warning justify-content-right">CONTACT US</button>
+              </ul>
+            </div>
+        </nav> 
     )
+  }
 }
 
-export default NavBar;
+export default Navbar;
