@@ -13,6 +13,7 @@ import LeadershipCoaching from './pages/leadershipCoaching'
 import OrgDev from './pages/orgDev'
 import TeamDev from './pages/teamDev'
 import ProcessImp from './pages/processImp'
+import Quote from './pages/quote'
 
 class App extends Component {
   state = {
@@ -49,12 +50,16 @@ class App extends Component {
           <OrgDev />
           <TeamDev />
           <ProcessImp />
+          <Quote />
+          <Contact />
+
           {/* <BrowserRouter>
             <Switch>
               <Route path='/' component={Home} exact/>
             </Switch>
           </BrowserRouter> */}
-          <Contact />
+
+          
         </div>
 
        
