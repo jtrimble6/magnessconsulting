@@ -2,6 +2,10 @@
     padding-right: 70px;
 }
 
+.contactSmall {
+    text-align: center;
+}
+
 .contactForm #name, #email, #phone, #message, #submit {
     min-width: 100%;
 }
