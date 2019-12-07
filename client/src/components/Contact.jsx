@@ -77,7 +77,7 @@ class Contact extends Component {
         <div>
           <header>CONTACT US</header>
 
-            <form id="form" className="topBefore" onSubmit={this.handleSubmit} method="POST">
+            <form id="form" className="topBefore contactForm" onSubmit={this.handleSubmit} method="POST">
         
               <input id="name" type="text" placeholder="NAME" />
               <input id="email" type="text" placeholder="E-MAIL" />
@@ -89,7 +89,7 @@ class Contact extends Component {
               <ContactError
                 contactError={this.state.contactError}
               />
-              <input id="submit" type="submit" value="GO!" />
+              <input id="submit" type="submit" value="SEND!" />
 
               <i className="fa fa-envelope" aria-hidden="true"></i>
 

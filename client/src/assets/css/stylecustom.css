@@ -1,3 +1,13 @@
 .icons {
     padding-right: 70px;
 }
+
+.contactForm #name, #email, #phone, #message, #submit {
+    min-width: 100%;
+}
+
+.fa-envelope {
+    font-size: 25px;
+    padding-top: 5px;
+    padding-right: 0px !important;
+}

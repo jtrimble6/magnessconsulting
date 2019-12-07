@@ -8,7 +8,11 @@ import './assets/css/style.css'
 import './assets/css/stylecustom.css'
 
 import Home from './pages/home'
-
+import About from './pages/about'
+import LeadershipCoaching from './pages/leadershipCoaching'
+import OrgDev from './pages/orgDev'
+import TeamDev from './pages/teamDev'
+import ProcessImp from './pages/processImp'
 
 class App extends Component {
   state = {
@@ -39,11 +43,17 @@ class App extends Component {
       return (
         <div className='wrapper'>
           <Navbar />
-          <BrowserRouter>
+          <Home />
+          <About />
+          <LeadershipCoaching />
+          <OrgDev />
+          <TeamDev />
+          <ProcessImp />
+          {/* <BrowserRouter>
             <Switch>
               <Route path='/' component={Home} exact/>
             </Switch>
-          </BrowserRouter>
+          </BrowserRouter> */}
           <Contact />
         </div>
 
