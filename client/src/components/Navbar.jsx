@@ -44,7 +44,7 @@ class Navbar extends Component {
             <div className="collapse navbar-collapse" id="navbarNavDropdown">
               <ul className="navbar-nav">
                 <li className="nav-item active">
-                    <a className="nav-link" onClick={this.scrollToSection} data-name='aboutSection'>
+                    <a className="nav-link" href='/' onClick={this.scrollToSection} data-name='aboutSection'>
                       MEET MAGNESS 
                       <span className="sr-only">(current)</span>
                     </a>
@@ -54,16 +54,16 @@ class Navbar extends Component {
                       SERVICES
                     </a>
                     <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a className="dropdown-item" onClick={this.scrollToSection} data-name='leadershipSection'>LEADERSHIP COACHING</a>
-                      <a className="dropdown-item" onClick={this.scrollToSection} data-name='teamSection'>TEAM DEVELOPMENT</a>
-                      <a className="dropdown-item" onClick={this.scrollToSection} data-name='processSection'>PROCESS IMPROVEMENT/PROBLEM SOLVING</a>
-                      <a className="dropdown-item" onClick={this.scrollToSection} data-name='orgSection'>ORGANIZATIONAL DEVELOPMENT</a>
+                      <a className="dropdown-item" href='/' onClick={this.scrollToSection} data-name='leadershipSection'>LEADERSHIP COACHING</a>
+                      <a className="dropdown-item" href='/' onClick={this.scrollToSection} data-name='teamSection'>TEAM DEVELOPMENT</a>
+                      <a className="dropdown-item" href='/' onClick={this.scrollToSection} data-name='processSection'>PROCESS IMPROVEMENT/PROBLEM SOLVING</a>
+                      <a className="dropdown-item" href='/' onClick={this.scrollToSection} data-name='orgSection'>ORGANIZATIONAL DEVELOPMENT</a>
                     </div>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" onClick={this.scrollToSection} data-name='missionSection'>MISSON</a>
+                  <a className="nav-link active" href='/' onClick={this.scrollToSection} data-name='missionSection'>MISSON</a>
                 </li>
-                <button type="button" className="btn btn-warning justify-content-right" onClick={this.scrollToSection} data-name='contactSection'>CONTACT US</button>
+                <button type="button" href='/' className="btn btn-warning justify-content-right" onClick={this.scrollToSection} data-name='contactSection'>CONTACT US</button>
               </ul>
             </div>
         </nav> 

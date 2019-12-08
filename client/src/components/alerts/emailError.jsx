@@ -4,7 +4,7 @@ import '../../assets/css/alert.css'
 
 //import { Link } from 'react-router-dom';
 
-class ContactError extends Component {
+class EmailError extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -20,10 +20,10 @@ class ContactError extends Component {
 
     render() {
         // console.log(this.props.contactError);
-        if (this.props.contactError === true) {
+        if (this.props.emailError === true) {
             return (
                 <Alert className='alertError' color='danger' isOpen={this.state.visible} toggle={this.onDismiss}>
-                    An error occured when sending the message!
+                    Please enter a valid email address!
                 </Alert>
             )
         } else {
@@ -32,4 +32,4 @@ class ContactError extends Component {
     }
 }
 
-export default ContactError;
+export default EmailError;

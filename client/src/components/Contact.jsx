@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios'
 import ContactSuccess from './alerts/contactSuccess'
 import ContactError from './alerts/contactError'
+import EmailError from './alerts/emailError'
 import {Element} from 'react-scroll'
 
 class Contact extends Component {
@@ -13,11 +14,16 @@ class Contact extends Component {
         this.state = {
           collapsed: true,
           contactSuccess: false,
-          contactError: false
+          contactError: false,
+          email: '',
+          emailError: false,
+          emailErrorAlert: false
         }
 
         this.handleSubmit = this.handleSubmit.bind(this)
+        this.handleInputChange = this.handleInputChange.bind(this)
         this.resetForm = this.resetForm.bind(this)
+        this.checkEmail = this.checkEmail.bind(this)
         
     }
 
@@ -27,14 +33,32 @@ class Contact extends Component {
         })
       }
 
+    handleInputChange = event => {
+        const { name, value } = event.target
+        this.setState({
+            [name]: value
+        })
+        this.checkEmail()
+      }
+  
+
     handleSubmit(e) {
       e.preventDefault()
+      
       const name = document.getElementById('name').value
       const email = document.getElementById('email').value
       const phone = document.getElementById('phone').value
       const message = document.getElementById('message').value
-      
-      console.log('MESSAGE: ', name, email, phone, message)
+
+      console.log('EMAIL ERROR? ', this.state.emailError)
+      if(this.state.emailError === true) {
+        this.setState({emailErrorAlert: true})
+        return;
+      } else {
+        this.setState({emailErrorAlert: false})
+      }
+
+      // console.log('MESSAGE: ', name, email, phone, message)
 
       if(name === '' || email === '' || message === '') {
         this.setState({
@@ -67,11 +91,24 @@ class Contact extends Component {
           })
         }
       })
-    }
+      }
 
     resetForm(){
+      this.setState({email: ''})
       document.getElementById('form').reset();
-    }
+      }
+
+    checkEmail() {
+      const email = this.state.email;
+      console.log(email);
+      let emailValid = email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
+      console.log('EMAIL VALID? ', emailValid)
+      if (emailValid === null) {
+        console.log('EMAIL ERROR!!!!!!')
+        this.setState({ emailError: true })
+      } else { this.setState({ emailError: false }) }
+
+      }
 
     render() {
       return (
@@ -82,15 +119,12 @@ class Contact extends Component {
             <form id="form" className="topBefore contactForm" onSubmit={this.handleSubmit} method="POST">
         
               <input id="name" type="text" placeholder="NAME" />
-              <input id="email" type="text" placeholder="E-MAIL" />
+              <input id="email" type="text" placeholder="E-MAIL" name="email" value={this.state.email} onChange={this.handleInputChange} />
               <input id="phone" type="text" placeholder="PHONE (optional)" />
               <textarea id="message" type="text" placeholder="MESSAGE" />
-              <ContactSuccess
-                contactSuccess={this.state.contactSuccess}
-              />
-              <ContactError
-                contactError={this.state.contactError}
-              />
+              <ContactSuccess contactSuccess={this.state.contactSuccess} />
+              <ContactError contactError={this.state.contactError} />
+              <EmailError emailError={this.state.emailErrorAlert} />
               <input id="submit" type="submit" value="SEND!" />
 
               <i className="fa fa-envelope" aria-hidden="true"></i>
