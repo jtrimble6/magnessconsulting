@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios'
 import ContactSuccess from './alerts/contactSuccess'
 import ContactError from './alerts/contactError'
+import {Element} from 'react-scroll'
 
 class Contact extends Component {
     constructor(props) {
@@ -75,6 +76,7 @@ class Contact extends Component {
     render() {
       return (
         <div>
+          <Element name="contactSection"></Element>
           <header>CONTACT US</header>
 
             <form id="form" className="topBefore contactForm" onSubmit={this.handleSubmit} method="POST">

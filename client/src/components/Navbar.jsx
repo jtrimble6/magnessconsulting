@@ -61,9 +61,9 @@ class Navbar extends Component {
                     </div>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="/">MISSON</a>
+                  <a className="nav-link active" onClick={this.scrollToSection} data-name='missionSection'>MISSON</a>
                 </li>
-                <button type="button" className="btn btn-warning justify-content-right">CONTACT US</button>
+                <button type="button" className="btn btn-warning justify-content-right" onClick={this.scrollToSection} data-name='contactSection'>CONTACT US</button>
               </ul>
             </div>
         </nav> 
