@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
+import * as Scroll from 'react-scroll';
+// import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 class Navbar extends Component {
     constructor(props) {
         super(props);
 
         this.toggleNavbar = this.toggleNavbar.bind(this);
+        this.scrollToSection = this.scrollToSection.bind(this);
 
         this.state = {
           collapsed: true
@@ -16,6 +19,20 @@ class Navbar extends Component {
             collapsed: !this.state.collapsed
         })
       }
+    
+    scrollToSection = (e) => {
+      e.preventDefault()
+      let target = e.target
+      let targetName = target.getAttribute('data-name')
+      const scroller = Scroll.scroller;
+      scroller.scrollTo(targetName, {
+        duration: 1000,
+        delay: 50,
+        smooth: true,
+        // containerId: 'ContainerElementID',
+        offset: 0, // Scrolls to element + 50 pixels down the page
+      })
+    }
 
     render() {
       return (
@@ -27,7 +44,7 @@ class Navbar extends Component {
             <div className="collapse navbar-collapse" id="navbarNavDropdown">
               <ul className="navbar-nav">
                 <li className="nav-item active">
-                    <a className="nav-link" href="/">
+                    <a className="nav-link" onClick={this.scrollToSection} data-name='aboutSection'>
                       MEET MAGNESS 
                       <span className="sr-only">(current)</span>
                     </a>
@@ -37,10 +54,10 @@ class Navbar extends Component {
                       SERVICES
                     </a>
                     <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a className="dropdown-item" href="/">LEADERSHIP COACHING</a>
-                      <a className="dropdown-item" href="/">TEAM DEVELOPMENT</a>
-                      <a className="dropdown-item" href="/">PROCESS IMPROVEMENT/PROBLEM SOLVING</a>
-                      <a className="dropdown-item" href="/">ORGANIZATIONAL DEVELOPMENT</a>
+                      <a className="dropdown-item" onClick={this.scrollToSection} data-name='leadershipSection'>LEADERSHIP COACHING</a>
+                      <a className="dropdown-item" onClick={this.scrollToSection} data-name='teamSection'>TEAM DEVELOPMENT</a>
+                      <a className="dropdown-item" onClick={this.scrollToSection} data-name='processSection'>PROCESS IMPROVEMENT/PROBLEM SOLVING</a>
+                      <a className="dropdown-item" onClick={this.scrollToSection} data-name='orgSection'>ORGANIZATIONAL DEVELOPMENT</a>
                     </div>
                 </li>
                 <li className="nav-item">

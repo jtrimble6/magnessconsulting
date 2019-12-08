@@ -1,10 +1,13 @@
 import React, {Component} from 'react'
+// import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import {Element} from 'react-scroll'
 
 
 class About extends Component {
   render() {
     return (
         <div className='aboutPage'>
+          <Element name="aboutSection"></Element>
          <h1>About</h1>
          <h5>Shane Magness</h5>
          <h5>Doctor of Management in Organizational Leadership</h5>

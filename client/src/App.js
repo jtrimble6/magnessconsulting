@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import Navbar from './components/Navbar'
-import Contact from './components/Contact'
+// import { BrowserRouter, Route, Switch } from 'react-router-dom'
+
+
 import './Reset.css';
 import './App.css';
 import './assets/css/style.css'
 import './assets/css/stylecustom.css'
 
+import Navbar from './components/Navbar'
+import Contact from './components/Contact'
 import Home from './pages/home'
 import About from './pages/about'
 import LeadershipCoaching from './pages/leadershipCoaching'
