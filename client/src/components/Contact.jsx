@@ -50,7 +50,7 @@ class Contact extends Component {
       const phone = document.getElementById('phone').value
       const message = document.getElementById('message').value
 
-      console.log('EMAIL ERROR? ', this.state.emailError)
+      // console.log('EMAIL ERROR? ', this.state.emailError)
       if(this.state.emailError === true) {
         this.setState({emailErrorAlert: true})
         return;
@@ -79,13 +79,13 @@ class Contact extends Component {
         }
     }).then((response)=>{
         if (response.data.msg === 'success'){
-            console.log("Message Sent."); 
+            // console.log("Message Sent."); 
             this.setState({
               contactSuccess: true
             })
             this.resetForm()
         } else if(response.data.msg === 'fail'){
-          console.log("Message failed to send.")
+          // console.log("Message failed to send.")
           this.setState({
             contactError: true
           })
@@ -100,11 +100,11 @@ class Contact extends Component {
 
     checkEmail() {
       const email = this.state.email;
-      console.log(email);
+      // console.log(email);
       let emailValid = email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
-      console.log('EMAIL VALID? ', emailValid)
+      // console.log('EMAIL VALID? ', emailValid)
       if (emailValid === null) {
-        console.log('EMAIL ERROR!!!!!!')
+        // console.log('EMAIL ERROR!!!!!!')
         this.setState({ emailError: true })
       } else { this.setState({ emailError: false }) }
 
