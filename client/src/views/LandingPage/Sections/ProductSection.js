@@ -21,13 +21,15 @@ export default function ProductSection() {
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8}>
-          <h2 className={classes.title}>Let{"'"}s talk product</h2>
+          <h2 className={classes.title}>Leadership Coaching</h2>
           <h5 className={classes.description}>
-            This is the paragraph where you can write more details about your
-            product. Keep you user engaged by providing meaningful information.
-            Remember that by this time, the user is curious, otherwise he wouldn
-            {"'"}t scroll to get here. Add a button if you want the user to see
-            more.
+          Coaching leaders is one of the best decisions and organization can make. 
+          Organizations only grow to the level that their leaders perform. Leaders 
+          grow every day with proper direction, we want to provide that direction 
+          and help them on that journey. Leadership coaching is a one-on-one 
+          process that is designed to improve performance and increase the ability 
+          to lead high performing teams. We will help to drive the highest performance
+          from your staff and create a sustainable future for your organization. (sales coaching as well)
           </h5>
         </GridItem>
       </GridContainer>

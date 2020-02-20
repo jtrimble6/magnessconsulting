@@ -21,6 +21,7 @@ import styles from "assets/css/jss/material-kit-react/views/landingPage.js";
 import ProductSection from "./Sections/ProductSection.js";
 import TeamSection from "./Sections/TeamSection.js";
 import WorkSection from "./Sections/WorkSection.js";
+// import Contact from "../../components/Contact.jsx"
 
 const dashboardRoutes = [];
 
@@ -34,7 +35,7 @@ export default function LandingPage(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="Material Kit React"
+        brand="Magness Consulting LLC"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
@@ -47,15 +48,15 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>Your Story Starts With Us.</h1>
+              <h1 className={classes.title}>Leadership Development</h1>
               <h4>
-                Every landing page needs a small description after the big bold
-                title, that{"'"}s why we added this text here. Add here all the
-                information that can make you or your product create the first
-                impression.
+              Our mission at Magness Consulting is to engage people at all levels of your organization, 
+              while creating a high level of excellence. We address challenges in the workplace, train 
+              and coach leaders to overcome those challenges. At Magness consulting our mission is 
+              to serve you. We will tell you the hard truth to help your organization grow and succeed.
               </h4>
               <br />
-              <Button
+              {/* <Button
                 color="danger"
                 size="lg"
                 href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
@@ -64,7 +65,7 @@ export default function LandingPage(props) {
               >
                 <i className="fas fa-play" />
                 Watch video
-              </Button>
+              </Button> */}
             </GridItem>
           </GridContainer>
         </div>

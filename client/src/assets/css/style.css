@@ -80,13 +80,13 @@ body {
   color: #b3aca7;
 }
 
-header {
+/* header {
   position: relative;
   margin: 100px 0 25px 0;
   font-size: 2.3em;
   text-align: center;
   letter-spacing: 7px;
-}
+} */
 
 #form {
   position: relative;
