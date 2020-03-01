@@ -17,7 +17,7 @@ import HeaderLinks from "components/Header/HeaderLinks.js";
 import NavPills from "components/NavPills/NavPills.js";
 import Parallax from "components/Parallax/Parallax.js";
 
-import profile from "assets/css/img/faces/christian.jpg";
+import profile from "assets/css/images/magnessHeadshot.jpg";
 
 import studio1 from "assets/css/img/examples/studio-1.jpg";
 import studio2 from "assets/css/img/examples/studio-2.jpg";
@@ -56,7 +56,7 @@ export default function ProfilePage(props) {
         }}
         {...rest}
       />
-      <Parallax small filter image={require("assets/css/img/profile-bg.jpg")} />
+      <Parallax small filter image={require("assets/css/img/profile-bg-blue.jpg")} />
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div>
           <div className={classes.container}>
