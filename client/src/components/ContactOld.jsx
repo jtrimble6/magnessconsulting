@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios'
-import ContactSuccess from './alerts/contactSuccess'
-import ContactError from './alerts/contactError'
-import EmailError from './alerts/emailError'
-import {Element} from 'react-scroll'
+// import ContactSuccess from './alerts/contactSuccess'
+// import ContactError from './alerts/contactError'
+// import EmailError from './alerts/emailError'
+// import {Element} from 'react-scroll'
 
 class Contact extends Component {
     constructor(props) {
@@ -111,9 +111,10 @@ class Contact extends Component {
       }
 
     render() {
+      // const classes = useStyles();
       return (
         <div>
-          <Element name="contactSection"></Element>
+          {/* <Element name="contactSection"></Element>
           <header>CONTACT US</header>
 
             <form id="form" className="topBefore contactForm" onSubmit={this.handleSubmit} method="POST">
@@ -151,7 +152,11 @@ class Contact extends Component {
               </div>
             </div>
             
-          </form>
+          </form> */}
+
+
+
+
         </div>
     )
   }

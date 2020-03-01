@@ -1,4 +1,4 @@
-.icons {
+/* .icons {
     padding-right: 70px;
 }
 
@@ -14,4 +14,41 @@
     font-size: 25px;
     padding-top: 5px;
     padding-right: 0px !important;
+} */
+
+.contactSection {
+    padding: 70px 0
+}
+
+.contactTitle {
+  color: #3C4858;
+  margin: 1.75rem 0 0.875rem;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: "Roboto Slab", "Times New Roman", serif;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  min-height: 32px;
+  text-align: center;
+}
+
+.contactDescription {
+    color: #999999;
+    text-align: center;
+}
+
+.contactTextCenter {
+    text-align: center;
+}
+
+.contactTextArea {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.contactTextArea :hover {
+    background: #b3aca7;
+    color: #e2dedb;
+    min-width: 100%;
+    transition-duration: 0.5s;
 }

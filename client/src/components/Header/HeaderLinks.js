@@ -58,7 +58,7 @@ export default function HeaderLinks(props) {
         <Button
           href="/profile-page"
           color="transparent"
-          target="_blank"
+          // target="_blank"
           className={classes.navLink}
         >
           Biography
