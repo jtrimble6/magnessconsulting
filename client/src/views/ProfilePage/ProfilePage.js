@@ -47,7 +47,7 @@ export default function ProfilePage(props) {
     <div>
       <Header
         color="transparent"
-        brand="Material Kit React"
+        brand="Magness Consulting LLC"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
@@ -67,8 +67,8 @@ export default function ProfilePage(props) {
                     <img src={profile} alt="..." className={imageClasses} />
                   </div>
                   <div className={classes.name}>
-                    <h3 className={classes.title}>Christian Louboutin</h3>
-                    <h6>DESIGNER</h6>
+                    <h3 className={classes.title}>Shane Magness</h3>
+                    <h6>OWNER/CEO</h6>
                     <Button justIcon link className={classes.margin5}>
                       <i className={"fab fa-twitter"} />
                     </Button>
@@ -84,10 +84,7 @@ export default function ProfilePage(props) {
             </GridContainer>
             <div className={classes.description}>
               <p>
-                An artist of considerable range, Chet Faker — the name taken by
-                Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
-                and records all of his own music, giving it a warm, intimate
-                feel with a solid groove structure.{" "}
+                Having a military and manufacturing background in a fortune 500 company, I have learned to build successful teams, solve hard-hitting problems, and train leaders to perform at high levels.  I help leaders and teams to reach their full potential.   My purpose as a consultant is to help winners win more, and to help ambitus people move to the next level of their leadership journey.   I enjoy helping teams become more productive, better problem solvers, and actively perform to their full potential.   “Be the leader that subordinates do not want to disappoint.”  This is how I have explained good leadership for the last ten years.  {" "}
               </p>
             </div>
             <GridContainer justify="center">

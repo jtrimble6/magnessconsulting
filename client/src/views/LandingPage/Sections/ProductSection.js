@@ -3,9 +3,9 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
-import Chat from "@material-ui/icons/Chat";
-import VerifiedUser from "@material-ui/icons/VerifiedUser";
-import Fingerprint from "@material-ui/icons/Fingerprint";
+import AddCircleIcon from '@material-ui/icons/AddCircle'
+import CategoryIcon from '@material-ui/icons/Category';
+import PeopleIcon from '@material-ui/icons/People';
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
@@ -37,27 +37,27 @@ export default function ProductSection() {
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Free Chat"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={Chat}
+              title="Process Improvement"
+              description="Every organization has challenges. Not only do we help to build teams to be critical thinkers and problem solvers, we also deep dive into challenges that may be hindering your organizations performance. Whether your opportunity is people or process related,  we can evaluate these challenges to provide corrective actions and an appropriate plan for improvement."
+              icon={AddCircleIcon}
               iconColor="info"
               vertical
             />
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Verified Users"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={VerifiedUser}
+              title="Organizational Development"
+              description="We can create structure within your organization through succession planning and preventing critical knowledge loss. We can help you to identify gaps in your programs and even develop new programs that are more sustainable. We can create fully integrated systems for your organization to increase productivity by adding monitors and controls to your process, systems to identify and improve opportunities, expediting learning processes, and procedures for identifying root causes of problems and installing corrective countermeasures."
+              icon={CategoryIcon}
               iconColor="success"
               vertical
             />
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Fingerprint"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={Fingerprint}
+              title="Team Development"
+              description="A cohesive high performing team is the most valuable asset an organization can have, which can lead to exceptional growth for your organization. Our goal is to train teams to perform to their full potential. We develop programs that will improve collaboration and efficiency in your organization. We help to build and structure long lasting teams through training and developing talent in your organization."
+              icon={PeopleIcon}
               iconColor="danger"
               vertical
             />

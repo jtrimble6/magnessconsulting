@@ -21,6 +21,7 @@ import Button from "components/CustomButtons/Button.js";
 import DropDownMenu from 'material-ui/DropDownMenu';
 import MenuItem from 'material-ui/MenuItem';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 // import styles from "assets/css/jss/material-kit-react/views/landingPageSections/workStyle.js";
 
@@ -175,6 +176,11 @@ class Contact extends Component {
       }
 
     render() {
+      // const muiTheme = getMuiTheme({}, {
+      //   menuItem: {
+      //     selectedTextColor: 'white',
+      //   },
+      // });
       // const classes = useStyles();
       return (
         <div className="contactSection">
