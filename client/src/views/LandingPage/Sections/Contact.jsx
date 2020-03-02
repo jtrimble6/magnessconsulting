@@ -227,7 +227,10 @@ class Contact extends Component {
                     <DropDownMenu 
                       id="service"
                       value={this.state.serviceRequest} 
-                      onChange={this.handleServiceChange}   
+                      onChange={this.handleServiceChange}
+                      labelStyle={{
+                        color: "rgb(179,179,179)"
+                      }}
                     >
                       <MenuItem value={1} primaryText="Leadership Coaching"  />
                       <MenuItem value={2} primaryText="Organizational Development" />

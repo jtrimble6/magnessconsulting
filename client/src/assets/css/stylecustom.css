@@ -46,9 +46,24 @@
     margin-left: 15px;
 }
 
-.contactTextArea :hover {
-    background: #b3aca7;
+/* .contactTextArea :hover {
+    background: rgb(179,179,179);
     color: #e2dedb;
     min-width: 100%;
     transition-duration: 0.5s;
+} */
+
+#service {
+    font-family: "Roboto Slab", "Times New Roman", serif;
+    padding-left: 0px;
+    padding-right: 0px;
+    top: 12px;
+    color: rgb(179,179,179) !important;
+    /* font-weight: 700; */
+    text-align: center;
+    right: 20px;
+}
+
+#element.style {
+    color: rgb(179,179,179) !important;
 }
