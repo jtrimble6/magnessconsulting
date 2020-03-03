@@ -64,6 +64,6 @@
     right: 20px;
 }
 
-#element.style {
-    color: rgb(179,179,179) !important;
+.contactTextCenter {
+    margin: auto !important;
 }

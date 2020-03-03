@@ -4,6 +4,7 @@ import "../../../assets/css/stylecustom.css"
 // import ContactSuccess from './alerts/contactSuccess'
 // import ContactError from './alerts/contactError'
 // import EmailError from './alerts/emailError'
+
 // @material-ui/core components
 // import { makeStyles } from "@material-ui/core/styles";
 
@@ -21,7 +22,7 @@ import Button from "components/CustomButtons/Button.js";
 import DropDownMenu from 'material-ui/DropDownMenu';
 import MenuItem from 'material-ui/MenuItem';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
+// import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 // import styles from "assets/css/jss/material-kit-react/views/landingPageSections/workStyle.js";
 
@@ -126,8 +127,8 @@ class Contact extends Component {
 
       axios({
         method: "POST", 
-        // url:"http://magnessconsulting.com/send",
-        url:"http://localhost:3000/send", 
+        url:"https://magnessconsulting.herokuapp.com/send",
+        // url:"http://localhost:3000/send", 
         data: {
             name: name,   
             email: email,  
@@ -237,7 +238,6 @@ class Contact extends Component {
                       <MenuItem value={3} primaryText="Process Improvement" />
                       <MenuItem value={4} primaryText="Team Development" />
                       <MenuItem value={5} primaryText="Multiple Services" />
-
                     </DropDownMenu>
                   </MuiThemeProvider>
                   </GridItem>
@@ -254,8 +254,8 @@ class Contact extends Component {
                     }}
                   />
                   <GridContainer justify="center">
-                    <GridItem xs={12} sm={12} md={4} className="contactTextCenter">
-                      <Button color="primary" onClick={this.handleSubmit}>Send Message</Button>
+                    <GridItem xs={12} sm={12} md={4} className="contactTextCenter" align="center" justify="center">
+                      <Button className="contactSubmit" color="primary" onClick={this.handleSubmit}>Send Message</Button>
                     </GridItem>
                   </GridContainer>
                 </GridContainer>
