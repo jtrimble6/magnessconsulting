@@ -45,9 +45,11 @@ class Contact extends Component {
           nameLabelText: "Name",
           emailLabelText: "Email",
           phoneLabelText: "Phone Number (optional)",
-          messageLabelText: "Message"
+          messageLabelText: "Message",
+          data: "You are NOT connected to the server"
         }
 
+        this.callBackendAPI = this.callBackendAPI.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
         this.handleInputChange = this.handleInputChange.bind(this)
         this.handleServiceChange = this.handleServiceChange.bind(this)
@@ -55,6 +57,26 @@ class Contact extends Component {
         this.checkEmail = this.checkEmail.bind(this)
         
     }
+
+    componentDidMount() {
+        // Call our fetch function below once the component mounts
+      this.callBackendAPI()
+        .then(res => this.setState({ data: res.express }))
+        .catch(err => {
+          console.log(err)
+          this.setState({ data: 'You are NOT connected to the server' })
+        });
+    }
+      // Fetches our GET route from the Express server. (Note the route we are fetching matches the GET route from server.js
+    callBackendAPI = async () => {
+      const response = await fetch('/express_backend');
+      const body = await response.json();
+
+      if (response.status !== 200) {
+        throw Error(body.message) 
+      }
+      return body;
+    };
 
     toggleContact() {
         this.setState({
