@@ -37,15 +37,6 @@ app.use(
   })
 );
 
-//DUPLICATE CODE AS ABOVE W/ ONE ADDITIONAL LINE OF CODE
-// app.use(
-//   session({
-//     secret: 'fraggle-rock',
-//     store: new MongoStore({ mongooseConnection: dbConnection }),
-//     resave: false,
-//     saveUninitialized: false
-//   })
-// );
 
 // passport.serializeUser(function(user, done) {
 //   done(null, user._id);
