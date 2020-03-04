@@ -166,7 +166,7 @@ class Contact extends Component {
             })
             this.resetForm()
         } else if(response.data.msg === 'fail'){
-          console.log(response.data.msg)
+          console.log(response.data)
           console.log("Message failed to send.")
           this.setState({
             contactError: true
