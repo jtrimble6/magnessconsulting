@@ -149,7 +149,7 @@ class Contact extends Component {
 
       axios({
         method: "POST", 
-        url:"http://magnessconsulting.herokuapp.com/send",
+        url:"https://magnessconsulting.herokuapp.com/send",
         // url:"http://localhost:3000/send", 
         data: {
             name: name,   
