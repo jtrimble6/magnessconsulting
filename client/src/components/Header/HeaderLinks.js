@@ -89,7 +89,7 @@ export default function HeaderLinks(props) {
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            href="https://twitter.com/DrMagness"
+            href="/"
             target="_blank"
             color="transparent"
             className={classes.navLink}
@@ -107,7 +107,7 @@ export default function HeaderLinks(props) {
         >
           <Button
             color="transparent"
-            href="https://www.facebook.com/Dr.Shanemagness"
+            href="/"
             target="_blank"
             className={classes.navLink}
           >
